@@ -52,6 +52,11 @@ div {
   transform: rotate(45deg);
 }
 
+.diamond-move {
+  transform: translate(-150px,0px) rotate(45deg);
+  animation: transition linear 0.5s;
+}
+
 .panel {
   max-height: 10em;
   overflow: hidden;
@@ -103,4 +108,9 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+}
+
+@keyframes transition {
+  0% { transform: translate(0px,0px) rotate(45deg);}
+  100% { transform: translate(-150px,0px) rotate(45deg);}
 }
