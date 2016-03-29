@@ -2,6 +2,8 @@ var $clicked = $('.btn-show-hide');
 var $move = $('.btn-move');
 var $bounce = $('.btn-bounce');
 var $compress = $('.btn-collapse-expand');
+var $expand = $('.btn-append');
+var $list = $('.list');
 
 $clicked.on('click', function (e) {
   $('.box').toggleClass('box-show');
@@ -17,4 +19,11 @@ $compress.on('click', function (e) {
 
 $bounce.on('click', function (e) {
   $('.circle').toggleClass('circle-bounce');
+});
+
+$expand.on('click', function (e) {
+  var $li = $('<li>');
+
+  $list.append($li);
+  $('ul').addClass('words');
 });
