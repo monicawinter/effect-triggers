@@ -50,11 +50,11 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all 0.75s ease;
 }
 
 .diamond-move {
-  transform: translate(-150px,0px) rotate(45deg);
-  animation: transition linear 0.5s;
+  right: 50px;
 }
 
 .panel {
@@ -68,6 +68,11 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+  transition: 0.5s ease;
+}
+
+.panel-squish {
+  max-height: 0;
 }
 
 .panel h2 {
@@ -82,6 +87,10 @@ div {
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.circle-bounce {
+  animation: bounce 5s cubic-bezier(0,1.55,1,-058) forwards;
 }
 
 .list {
@@ -111,6 +120,11 @@ div {
 }
 
 @keyframes transition {
-  0% { transform: translate(0px,0px) rotate(45deg);}
-  100% { transform: translate(-150px,0px) rotate(45deg);}
+  0% { transform: translate(0px,0px); }
+  100% { transform: translate(-150px,0px); }
+}
+
+@keyframes bounce {
+  0% {  }
+  100% {  }
 }
