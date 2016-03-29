@@ -18,7 +18,11 @@ $compress.on('click', function (e) {
 });
 
 $bounce.on('click', function (e) {
-  $('.circle').toggleClass('circle-bounce');
+  $('.circle').addClass('circle-bounce');
+});
+
+$('.circle').on('animationend', function (e) {
+  $('.circle').removeClass('circle-bounce');
 });
 
 $expand.on('click', function (e) {
