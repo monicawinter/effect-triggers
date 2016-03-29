@@ -120,7 +120,7 @@ div {
 }
 
 .words {
-  max-height: 10em;
+  animation: grow 0.5s forwards;
 }
 
 @keyframes transition {
@@ -142,9 +142,10 @@ div {
 
   100% { transform: translate(-120px, 0); }
 }
-@keyframes animation {
 
-  0% { max-height: 10em; }
+@keyframes grow {
+
+  0% { max-height: 0; }
 
   100% { max-height: 10em; }
 

@@ -25,5 +25,5 @@ $expand.on('click', function (e) {
   var $li = $('<li>');
 
   $list.append($li);
-  $('ul').addClass('words');
+  $li.addClass('words');
 });
